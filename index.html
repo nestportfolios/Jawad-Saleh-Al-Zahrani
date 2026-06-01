@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Jawad Saleh Al-Zahrani - Mechanical Engineer specialized in maintenance, HVAC, quality assurance, energy systems, and inspection. Based in Riyadh, Saudi Arabia.">
+  <title>Jawad Saleh Al-Zahrani | Mechanical Engineer Portfolio</title>
+  
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <meta name="theme-color" content="#f980ab">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvas for Floating Bubbles -->
+  <canvas id="bubbles-canvas"></canvas>
+
+  <!-- Preloader Page -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <span class="logo-text">JA</span>
+        <div class="logo-ring"></div>
+      </div>
+      <h2 class="preloader-name">Jawad Al-Zahrani</h2>
+      <p class="preloader-subtitle">Mechanical Engineer</p>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-logo">JA</div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#memberships" class="nav-link">Memberships</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+        <i data-lucide="moon" class="icon-moon"></i>
+        <i data-lucide="sun" class="icon-sun"></i>
+      </button>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#memberships" class="mobile-nav-link">Memberships</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- 1. Hero Section -->
+    <section id="hero" class="section hero-section animate-in">
+      <div class="glass-card hero-card">
+        <div class="hero-grid">
+          <!-- Profile Image Column (Left) -->
+          <div class="hero-image-col">
+            <div class="profile-image-container">
+              <!-- Actual profile image from assets folder -->
+              <img src="assets/profile%20pic.jpg" alt="Jawad Al-Zahrani" class="profile-img">
+              <div class="image-reflection"></div>
+            </div>
+          </div>
+
+          <!-- Hero Details Column (Right) -->
+          <div class="hero-details-col">
+            <div class="badge-row">
+              <span class="badge badge-primary">SCE Member</span>
+              <span class="badge badge-accent">Riyadh, SA</span>
+            </div>
+            
+            <h1 class="hero-name font-rainbow-sweep" id="typing-hero-name">Jawad Saleh Al-Zahrani</h1>
+            
+            <!-- Animated Title Rotation -->
+            <div class="role-rotation-container">
+              <span class="role-text" id="role-rotator">Mechanical Engineer</span>
+            </div>
+            
+
+
+            <ul class="hero-contact-list">
+              <li>
+                <a href="mailto:jawadzhh1@gmail.com" class="contact-link-hover">
+                  <i data-lucide="mail"></i> jawadzhh1@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+966506594702" class="contact-link-hover">
+                  <i data-lucide="phone"></i> +966 50 659 4702
+                </a>
+              </li>
+              <li>
+                <span class="contact-item">
+                  <i data-lucide="map-pin"></i> Riyadh, Saudi Arabia
+                </span>
+              </li>
+              <li>
+                <span class="contact-item">
+                  <i data-lucide="award"></i> SCE Membership No. 1127289
+                </span>
+              </li>
+            </ul>
+
+            <div class="hero-actions">
+              <a href="assets/download_resume.jpeg" download="Jawad_Al-Zahrani_CV.jpeg" class="btn btn-primary btn-color-invert cv-download-btn">
+                <i data-lucide="download"></i> Download CV
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-color-invert">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Profiles Section -->
+    <section id="profiles" class="section profiles-section animate-in">
+      <div class="glass-card profiles-card">
+        <h3 class="section-subtitle">Professional Links</h3>
+        <div class="profile-links-grid">
+          <a href="https://www.linkedin.com/in/jawad-alzahrani-1488a6352/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-color-invert profile-btn">
+            <i data-lucide="linkedin"></i> Connect on LinkedIn
+          </a>
+          <a href="mailto:jawadzhh1@gmail.com" class="btn btn-secondary btn-color-invert profile-btn">
+            <i data-lucide="mail"></i> Email Inquiries
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="section about-section animate-in">
+      <div class="glass-card about-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="user"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">About Me</h2>
+        </div>
+        <p class="about-text">
+          A highly driven and meticulous Mechanical Engineering graduate and a registered member of the Saudi Council of Engineers, deeply aligned with standard security, safety, and quality directives. Experienced in overseeing complex mechanical maintenance operations, designing and balancing HVAC systems, performing precise thermal analyses, managing complex control networks, and running critical diagnostic troubleshooting routines. Possesses robust critical reasoning, spatial intelligence, and analytical capabilities combined with collaborative communication to translate operational blueprints into flawless high-performance systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. Experience Section -->
+    <section id="experience" class="section experience-section animate-in">
+      <div class="glass-card experience-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Position 1 -->
+          <div class="timeline-item glass-card card-overlay-slide">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">Dec 2025 — Present</span>
+              <span class="timeline-divider">||</span>
+              <h3 class="timeline-role">Mechanical Engineer (مهندس ميكانيكا)</h3>
+            </div>
+            <div class="timeline-meta">
+              <span class="company-name">Civil Works Company (شركة الأعمال المدنية)</span>
+              <span class="job-type-pill">Full-time</span>
+              <span class="job-location"><i data-lucide="map-pin"></i> Riyadh, Saudi Arabia &bull; Hybrid</span>
+            </div>
+            <p class="timeline-desc">
+              Supervising mechanical maintenance procedures, facility equipment installation, and structural integrity analysis. Designing HVAC integrations, reviewing quality workflows, and leading multi-functional team coordination to ensure seamless adherence to project criteria and local safety compliance.
+            </p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Mechanical Engineering</span>
+              <span class="skill-tag">Project Support</span>
+              <span class="skill-tag">Facility Maintenance</span>
+            </div>
+          </div>
+
+          <!-- Position 2 -->
+          <div class="timeline-item glass-card card-overlay-slide">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">Oct 2025 — Nov 2025</span>
+              <span class="timeline-divider">||</span>
+              <h3 class="timeline-role">Mechanical Engineer (مهندس ميكانيكا)</h3>
+            </div>
+            <div class="timeline-meta">
+              <span class="company-name">Arabshadows</span>
+              <span class="job-type-pill">Full-time</span>
+              <span class="job-location"><i data-lucide="map-pin"></i> Riyadh, Saudi Arabia &bull; Hybrid</span>
+            </div>
+            <p class="timeline-desc">
+              Facilitated mechanical system testing, performance parameter tracking, and documentation management. Modeled systems configurations and addressed minor mechanical bottlenecks through computer-aided design reviews.
+            </p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Mechanical Design</span>
+              <span class="skill-tag">Parametric Tracking</span>
+            </div>
+          </div>
+
+          <!-- Position 3 -->
+          <div class="timeline-item glass-card card-overlay-slide">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">May 2025</span>
+              <span class="timeline-divider">||</span>
+              <h3 class="timeline-role">Mechanical Engineer (مهندس ميكانيكا)</h3>
+            </div>
+            <div class="timeline-meta">
+              <span class="company-name">Al-Khatib Engineering Office (مكتب الخطيب للهندسة)</span>
+              <span class="job-type-pill">Full-time</span>
+              <span class="job-location"><i data-lucide="map-pin"></i> Jeddah, Makkah, Saudi Arabia &bull; On-site</span>
+            </div>
+            <p class="timeline-desc">
+              Provided consulting engineering support. Conducted mechanical blueprint inspections, verified compliance with technical drawings, and participated in site survey assessments for utility configurations.
+            </p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Mechanical Inspection</span>
+              <span class="skill-tag">Blueprint Verification</span>
+              <span class="skill-tag">Site Audits</span>
+            </div>
+          </div>
+
+          <!-- Position 4 -->
+          <div class="timeline-item glass-card card-overlay-slide">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">Jun 2022 — Aug 2022</span>
+              <span class="timeline-divider">||</span>
+              <h3 class="timeline-role">Mechanical Engineering Intern (مهندس ميكانيكا)</h3>
+            </div>
+            <div class="timeline-meta">
+              <span class="company-name">Ministry of Environment, Water & Agriculture (وزارة البيئة والمياه والزراعة)</span>
+              <span class="job-type-pill">Internship</span>
+              <span class="job-location"><i data-lucide="map-pin"></i> Al Bahah, Saudi Arabia &bull; Hybrid</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li><span class="bullet-prefix">›</span> Supervised the maintenance of dam gates to control volume flow and structural load.</li>
+              <li><span class="bullet-prefix">›</span> Oversaw the maintenance of valves in dams, implementing leakage controls.</li>
+              <li><span class="bullet-prefix">›</span> Conducted maintenance on backup power generators at dams for emergency operations.</li>
+              <li><span class="bullet-prefix">›</span> Ensured smooth workflow and accuracy of operations.</li>
+              <li><span class="bullet-prefix">›</span> Enforced safety and security standards in all maintenance activities.</li>
+              <li><span class="bullet-prefix">›</span> Managed workforce efficiency and quality in team operations.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="skill-tag">Equipment Maintenance</span>
+              <span class="skill-tag">Operations Management</span>
+              <span class="skill-tag">Valves & Hydrology</span>
+              <span class="skill-tag">Safety Auditing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Education Section -->
+    <section id="education" class="section education-section animate-in">
+      <div class="glass-card education-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Education</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item glass-card card-overlay-slide">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="timeline-date">2019 — 2025</span>
+              <span class="timeline-divider">||</span>
+              <h3 class="timeline-role">Bachelor of Science in Mechanical Engineering</h3>
+            </div>
+            <div class="timeline-meta">
+              <span class="company-name">Al-Baha University (جامعة الباحة)</span>
+              <span class="job-location"><i data-lucide="map-pin"></i> Al Bahah, Saudi Arabia</span>
+            </div>
+            <p class="timeline-desc">
+              Acquired intensive academic foundation covering advanced thermodynamics, fluid dynamics, manufacturing processes, quality management systems, machine elements, structural analysis, control networks, and computer-aided designing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Skills Section -->
+    <section id="skills" class="section skills-section animate-in">
+      <div class="glass-card skills-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Skills & Expertise</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Technical & Engineering -->
+          <div class="skill-category-card glass-card card-overlay-slide">
+            <div class="category-header">
+              <div class="category-icon-bg">
+                <i data-lucide="cpu"></i>
+              </div>
+              <h3 class="category-title">Technical & Engineering</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-bullet">▸</span> Proficient in AutoCAD</li>
+              <li><span class="skill-bullet">▸</span> Skilled in ANSYS (FEA/CFD)</li>
+              <li><span class="skill-bullet">▸</span> Skilled in Coppelia Robotics</li>
+              <li><span class="skill-bullet">▸</span> HVAC Systems Knowledge</li>
+              <li><span class="skill-bullet">▸</span> Understanding of Energy Systems</li>
+              <li><span class="skill-bullet">▸</span> Mechanical Simulation & Analysis</li>
+              <li><span class="skill-bullet">▸</span> Knowledge of Control Systems</li>
+              <li><span class="skill-bullet">▸</span> Troubleshooting & Error Correction</li>
+              <li><span class="skill-bullet">▸</span> Advanced Computer Literacy</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Management & Projects -->
+          <div class="skill-category-card glass-card card-overlay-slide">
+            <div class="category-header">
+              <div class="category-icon-bg">
+                <i data-lucide="target"></i>
+              </div>
+              <h3 class="category-title">Management & Projects</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-bullet">▸</span> Fundamentals of Project Management</li>
+              <li><span class="skill-bullet">▸</span> Quality Control & Standards</li>
+              <li><span class="skill-bullet">▸</span> Resource Planning & Allocation</li>
+              <li><span class="skill-bullet">▸</span> Time Management & Milestones</li>
+              <li><span class="skill-bullet">▸</span> Decision-Making Under Stress</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Soft Skills -->
+          <div class="skill-category-card glass-card card-overlay-slide">
+            <div class="category-header">
+              <div class="category-icon-bg">
+                <i data-lucide="users"></i>
+              </div>
+              <h3 class="category-title">Soft & Interpersonal</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-bullet">▸</span> Effective Technical Communication</li>
+              <li><span class="skill-bullet">▸</span> Work Under High Operational Pressure</li>
+              <li><span class="skill-bullet">▸</span> Analytical Problem-Solving</li>
+              <li><span class="skill-bullet">▸</span> High Interpersonal Flexibility</li>
+              <li><span class="skill-bullet">▸</span> Cross-Functional Teamwork</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Languages sub-section inside Skills for tight grouping -->
+        <div class="languages-wrapper">
+          <h3 class="languages-title"><i data-lucide="globe"></i> Languages</h3>
+          <div class="languages-grid">
+            <!-- Arabic -->
+            <div class="language-item">
+              <div class="lang-meta">
+                <span class="lang-name">Arabic</span>
+                <span class="lang-level">Native Proficiency</span>
+              </div>
+              <div class="lang-bar-container" data-segments="9">
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+              </div>
+            </div>
+
+            <!-- English -->
+            <div class="language-item">
+              <div class="lang-meta">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Professional Working Proficiency</span>
+              </div>
+              <div class="lang-bar-container" data-segments="7">
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment filled"></div>
+                <div class="lang-bar-segment"></div>
+                <div class="lang-bar-segment"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Certifications Section -->
+    <section id="certifications" class="section certifications-section animate-in">
+      <div class="glass-card certifications-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="award"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Certifications & Courses</h2>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Project Management Professional (PMP)</h3>
+              <p class="cert-issuer">University of Oxford</p>
+              <span class="cert-date">Nov 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">PMP Course (دورة PMP)</h3>
+              <p class="cert-issuer">Technical and Vocational Training Corporation</p>
+              <span class="cert-date">Nov 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Occupational Safety and Health (OSHA)</h3>
+              <p class="cert-issuer">Safety & Environment Board</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="activity"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">"Managing Safely" Course (IOSH)</h3>
+              <p class="cert-issuer">IOSH Certified Institution</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="file-spreadsheet"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Excel Spreadsheet Program Training</h3>
+              <p class="cert-issuer">Professional Development Institute</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="smile"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Workplace Stress Management</h3>
+              <p class="cert-issuer">Human Resource Institute</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="brain"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Intro to Data Science & Artificial Intelligence</h3>
+              <p class="cert-issuer">Tech Academy Arabia</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="target"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Project Management (PMP Foundation)</h3>
+              <p class="cert-issuer">Management Institute of SA</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 9 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Project Resource Management</h3>
+              <p class="cert-issuer">Resource Planners Union</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 10 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="pen-tool"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Engineering Drawing Basics</h3>
+              <p class="cert-issuer">Engineering Union Training</p>
+              <span class="cert-date">March 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 11 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="layout"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">AutoCAD Architectural & Mechanical</h3>
+              <p class="cert-issuer">Autodesk Accredited Center</p>
+              <span class="cert-date">April 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 12 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="building"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Professional Facility Management</h3>
+              <p class="cert-issuer">Facilities Guild Saudi</p>
+              <span class="cert-date">April 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 13 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="lock"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">Personal Data Protection Policies</h3>
+              <p class="cert-issuer">National Cyber Security Authority</p>
+              <span class="cert-date">April 2025</span>
+            </div>
+          </div>
+
+          <!-- Cert 14 -->
+          <div class="cert-card glass-card card-overlay-slide">
+            <div class="cert-icon-container">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-name">LV Circuit Breakers (ACB's, MCCB's)</h3>
+              <p class="cert-issuer">Saudi Electric Power Academy</p>
+              <span class="cert-date">April 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Memberships Section -->
+    <section id="memberships" class="section memberships-section animate-in">
+      <div class="glass-card memberships-card card-overlay-slide">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="stamp"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Institutional Memberships</h2>
+        </div>
+        <div class="membership-detail">
+          <div class="membership-badge">
+            <svg viewBox="0 0 100 100" class="sce-svg">
+              <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="none" stroke="currentColor" stroke-width="3" />
+              <polygon points="50,20 80,35 80,65 50,80 20,65 20,35" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6" />
+              <text x="50" y="55" text-anchor="middle" font-size="14" font-weight="800" fill="currentColor" letter-spacing="1">SCE</text>
+            </svg>
+          </div>
+          <div class="membership-info">
+            <h3 class="membership-title">Saudi Council of Engineers (الهيئة السعودية للمهندسين)</h3>
+            <p class="membership-status">Registered Professional Engineer</p>
+            <p class="membership-meta">Membership Number: <strong class="text-glow">1127289</strong></p>
+            <span class="badge badge-accent">Active Membership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="section contact-section animate-in">
+      <div class="glass-card contact-card">
+        <div class="section-header">
+          <div class="icon-square">
+            <i data-lucide="send"></i>
+          </div>
+          <h2 class="section-title font-rainbow-sweep">Contact & Inquiries</h2>
+        </div>
+        
+        <p class="contact-prompt-text">
+          Have an opportunity or looking to consult on HVAC, mechanical layout, or industrial machinery operations? Feel free to reach out.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Email Card -->
+          <a href="mailto:jawadzhh1@gmail.com" class="contact-item-card glass-card btn-color-invert">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <h3 class="contact-label">Email</h3>
+            <p class="contact-value">jawadzhh1@gmail.com</p>
+          </a>
+
+          <!-- Phone Card -->
+          <a href="tel:+966506594702" class="contact-item-card glass-card btn-color-invert">
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
+            <h3 class="contact-label">Call / WhatsApp</h3>
+            <p class="contact-value">+966 50 659 4702</p>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/jawad-alzahrani-1488a6352/" target="_blank" rel="noopener noreferrer" class="contact-item-card glass-card btn-color-invert">
+            <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+            <h3 class="contact-label">LinkedIn</h3>
+            <p class="contact-value">Connect on LinkedIn</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand-section">
+        <div class="footer-brand-header">
+          <div class="footer-logo">JA</div>
+          <div class="footer-brand-info">
+            <h3 class="footer-brand-name font-rainbow-sweep">Jawad Al-Zahrani</h3>
+            <p class="footer-brand-tagline">Mechanical Engineer</p>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Transforming standard engineering blueprints into highly optimized, resilient, and safe thermal, fluid, and HVAC operational networks.
+        </p>
+      </div>
+
+      <div class="footer-links-section">
+        <div class="footer-link-col">
+          <h4 class="footer-header">Explore</h4>
+          <ul class="footer-nav">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+          </ul>
+        </div>
+        <div class="footer-link-col">
+          <h4 class="footer-header">Contact</h4>
+          <ul class="footer-nav">
+            <li><a href="mailto:jawadzhh1@gmail.com"><i data-lucide="mail"></i> jawadzhh1@gmail.com</a></li>
+            <li><a href="tel:+966506594702"><i data-lucide="phone"></i> +966 50 659 4702</a></li>
+            <li><span><i data-lucide="map-pin"></i> Riyadh, Saudi Arabia</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="copyright">&copy; 2026 Jawad Al-Zahrani. All rights reserved.</p>
+        <p class="credit">Crafted with Precision &amp; Flow</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icon Library -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- Custom Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
